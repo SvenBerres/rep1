@@ -28,3 +28,12 @@ You can also embed plots, for example:
 ![](testmarkdownfile_files/figure-markdown_github/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+own
+---
+
+``` r
+print("own r print comment")
+```
+
+    ## [1] "own r print comment"
