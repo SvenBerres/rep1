@@ -1,6 +1,11 @@
 ---
 title: "testmarkdown"
-output: github_document#
+output: github_document
+#word_document
+##
+#html-document
+#keep md
+
 ---
 
 ```{r setup, include=FALSE}
@@ -26,3 +31,9 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+##own
+```{r}
+print("own r print comment")
+```
