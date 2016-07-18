@@ -43,3 +43,9 @@ resLFC1 <- results(dds, lfcThreshold=1)
 table(resLFC1$padj < 0.1)
 resLFC1.05=resLFC1[which(resLFC1$padj<0.1),]
 resLFC1.05Order=resLFC1.05[order(resLFC1.05$padj),]
+
+plotMA(res, ylim=c(-5,5))
+head(resLFC1.05Order)
+
+resLFC1.05OrderbaseMean=resLFC1.05[order(resLFC1.05$baseMean),]
+resLFC1.05OrderbaseMean
